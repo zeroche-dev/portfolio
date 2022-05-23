@@ -1,0 +1,62 @@
+.techstack
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    width: 100vw;
+    gap: 20px;
+    min-height: 500px;
+    .techstack-item {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        line-height: 1.3em;
+        button {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        img, svg {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        span {
+            img {
+                image-rendering:optimizeQuality;
+            }
+            img, svg {
+                margin: 0;
+                margin-bottom: -5px;
+            }
+        }
+        align-items: center;
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        text-align: center;
+        width: 300px;
+        height: fit-content;
+        border-radius: 5px;
+        border: 1px solid black;
+    }
+    .react {
+        animation-name: spin;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear; 
+    }
+    @keyframes spin {
+        from {
+            transform:rotate(0deg);
+        }
+        to {
+            transform:rotate(360deg);
+        }
+    }
+}
+@include media("<=large")
+{
+    .mobile-item-1 { order: 1; }
+    .mobile-item-2 { order: 2; }
+    .mobile-item-3 { order: 3; }
+}

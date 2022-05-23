@@ -1,0 +1,13 @@
+.background-item {
+    position: absolute;
+    color: rgba(16, 16, 17, 0.205);
+    z-index: -9;
+   // animation: blinking 5s infinite;
+    transition: 8s ease-in-out;
+    height: fit-content;
+    width: fit-content;
+    inset: 50% 50%;
+    &:hover{
+      transform: rotate3d(3);  
+    }
+}

@@ -1,0 +1,21 @@
+/*--------------------------------------------------------------------
+  base SCSS imports
+--------------------------------------------------------------------- */
+
+@import "mixin_media/include_media_values";
+@import "mixin_media/include_media";
+
+
+/*--------------------------------------------------------------------
+  own styles SCSS imports
+--------------------------------------------------------------------- */
+
+@import "main";
+@import "/src/components/navi/navi";
+@import "/src/components/hero/hero";
+@import "/src/components/background/background";
+@import "/src/components/techstack/techstack";
+@import "/src/components/techstack/gitbutton/gitbutton";
+@import "/src/components/footer/footer";
+@import "/src/components/recentprojects/recentprojects";
+@import "/src/components/goodbye/goodbye";

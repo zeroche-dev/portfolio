@@ -1,0 +1,74 @@
+body {
+    font-family: "courier";
+    margin: 0!important;
+    //fixing wieeeerd bugs :P
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.noselect{
+    user-select: none;
+}
+
+.section-header
+{
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+main {
+    width: fit-content;
+    height: fit-content;
+}
+.section-normal {
+    h1 {
+        text-align: center;
+    }
+    margin: 70px auto 20px auto;
+    width: fit-content;
+    min-height: 600px;
+    max-width: 100vw;
+}
+
+hr
+{
+    border: 0;
+    height: 1px;
+    width: 10%;
+    position: relative!important;
+    overflow: visible;
+    margin: 30px auto;
+    box-sizing: content-box;
+}
+
+.hr-balls { // :D
+    background: black;
+    text-align: left;
+    width: 100px;
+    &::before{
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: white;
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 50px;
+      position: absolute;
+      top: -4.5px;
+      /* left: 50%; */
+      margin: 0 0 0 -3px;
+    }
+    &::after{
+        content: "";
+        width: 6px;
+        height: 6px;
+        background: rgb(5, 5, 5);
+        display: inline-block;
+        border: 2px solid black;
+        border-radius: 50px;
+        position: absolute;
+        top: -4.5px;
+        right: 0%;
+        margin: 0 0 0 -3px;
+      }
+  }
