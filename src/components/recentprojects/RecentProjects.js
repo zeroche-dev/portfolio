@@ -1,6 +1,7 @@
 import react from "react";
 import k3d from './../../assets/images/k3d.png';
 import jarlvpn from './../../assets/images/jarlvpn.png';
+import pswmgr from './../../assets/images/pswmgr.png';
 import GitButton from '../techstack/gitbutton/GitButton';
 
 const RecentProjects = () => {
@@ -43,6 +44,22 @@ const RecentProjects = () => {
                         </span>
                         <div className="project-buttons">
                             <a target="_blank" rel="noopener noreferrer" href={"http://157.230.111.141:8080/"}>Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="project-item">
+                    <div className="project-sample">
+                        <img style={{height: "310px", marginRight: "10px"}} src={pswmgr} alt="password manager screenshot"/>
+                    </div>
+                    <div className="project-desc">
+                        <h2>Crossplatform Password Manager</h2>
+                        <hr className="hr-balls"></hr>
+                        <span>
+                        Simple CRUD Password Manager written in Nodejs Express + React + Electron for Crossplatform compatibility.
+                        Works on both Linux and Windows.
+                        </span>
+                        <div className="project-buttons">
+                        <GitButton link={"https://github.com/zeroche-dev/react-electron-passwd-manager"}>react-electron-passwd-manager</GitButton>
                         </div>
                     </div>
                 </div>
