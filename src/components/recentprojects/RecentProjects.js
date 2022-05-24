@@ -49,7 +49,7 @@ const RecentProjects = () => {
                 </div>
                 <div className="project-item">
                     <div className="project-sample">
-                        <img style={{height: "310px", marginRight: "10px"}} src={pswmgr} alt="password manager screenshot"/>
+                        <img src={pswmgr} alt="password manager screenshot"/>
                     </div>
                     <div className="project-desc">
                         <h2>Crossplatform Password Manager</h2>
