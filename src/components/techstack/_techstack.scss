@@ -9,8 +9,8 @@
     gap: 20px;
     min-height: 500px;
     .techstack-item {
-        margin-left: 5vw;
-        margin-right: 5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
         line-height: 1.3em;
         button {
             margin-top: 10px;
@@ -54,9 +54,15 @@
         }
     }
 }
+@mixin mobile-item-i($order){
+    @for $i from 0 through $order {
+        .mobile-item-#{$i}{
+            order: #{$i};
+        }   
+    }
+}
+//totally unreadable
 @include media("<=large")
 {
-    .mobile-item-1 { order: 1; }
-    .mobile-item-2 { order: 2; }
-    .mobile-item-3 { order: 3; }
+    @include mobile-item-i(4);
 }
