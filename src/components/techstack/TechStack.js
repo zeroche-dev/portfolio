@@ -45,10 +45,10 @@ const TechStack = () => {
                     <div className="techstack-item mobile-item-3">
                         <FaPhp size={"150px"} color={"purple"}></FaPhp>
                         <span>PHP</span>
-                        <span>(MVC, RestAPI )</span>
+                        <span>(MVC, RestAPI)</span>
                         <hr className="hr-balls"/>
                         <span>Currently working on: </span>
-                        <span>Keeping my self updated with new standards</span>
+                        <span>Keeping myself updated with new standards</span>
                         <span style={{fontSize: "0.5em", lineHeight: "0.8em"}}></span>
                         <hr className="hr-balls"/>
                         <span>Recent projects: </span>
